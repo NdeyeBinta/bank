@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewController">
+   <children>
+      <JFXButton layoutX="35.0" layoutY="270.0" onAction="#admin" style="-fx-background-color: pink;" text="Administrateur" textFill="#1e6572" />
+      <JFXButton layoutX="259.0" layoutY="270.0" onAction="#caisse" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: pink;" text="Caissiere" textFill="#4fa9b9" />
+      <ImageView fitHeight="150.0" fitWidth="153.0" layoutX="35.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../com/image/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="251.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../com/image/user1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="435.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../com/image/Screenshot_2017-05-19-13-38-20-1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="58.0" layoutY="31.0" prefHeight="47.0" prefWidth="477.0" style="-fx-background-color: pink;" text="BIENVENU DANS MABANQUE" textFill="#34c4dd">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="respon_btn" layoutX="441.0" layoutY="270.0" onAction="#respon" style="-fx-background-color: pink;" text="RESPONSABLE" />
+   </children>
+</AnchorPane>

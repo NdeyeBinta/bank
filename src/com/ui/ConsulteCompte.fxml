@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ui.ConsulteCompteController">
+   <children>
+      <JFXTextField fx:id="codeCompte_txt" focusColor="#e429de" labelFloat="true" layoutX="246.0" layoutY="178.0" maxWidth="275.0" minWidth="275.0" prefHeight="52.0" prefWidth="275.0" promptText="Code" style="-fx-background-color: pink;" unFocusColor="#e7ee0a" />
+      <JFXButton fx:id="ok_btn" layoutX="534.0" layoutY="192.0" onAction="#ok" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: yellow;" text="OK" />
+      <JFXButton fx:id="new_btn" layoutX="358.0" layoutY="317.0" onAction="#naw" style="-fx-background-color: yellow;" text="New" />
+      <ImageView fitHeight="331.0" fitWidth="200.0" layoutX="22.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/user4.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

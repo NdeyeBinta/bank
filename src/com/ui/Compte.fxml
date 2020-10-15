@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="713.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ui.CompteController">
+   <children>
+      <JFXTextField fx:id="code_txt" layoutX="46.0" layoutY="55.0" maxWidth="178.0" minWidth="166.0" prefHeight="31.0" prefWidth="171.0" promptText="numero compte" style="-fx-background-color: pink;" />
+      <JFXComboBox fx:id="client_cbx" layoutX="40.0" layoutY="166.0" prefHeight="25.0" prefWidth="171.0" promptText="Client" style="-fx-background-color: pink;" />
+      <TableView fx:id="compte_table" layoutX="227.0" layoutY="5.0" onMouseClicked="#tableClick" prefHeight="322.0" prefWidth="453.0" style="-fx-background-color: pink;">
+        <columns>
+          <TableColumn fx:id="code_column" prefWidth="75.0" text="Code" />
+          <TableColumn fx:id="date_column" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="solde_column" prefWidth="75.0" text="Solde" />
+            <TableColumn fx:id="client_Column" prefWidth="75.0" text="Client" />
+            <TableColumn fx:id="agence_column" prefWidth="75.0" text="Agence" />
+            <TableColumn fx:id="type_column" prefWidth="75.0" text="Type" />
+        </columns>
+      </TableView>
+      <JFXComboBox fx:id="agence_cbx" layoutX="39.0" layoutY="208.0" prefHeight="25.0" prefWidth="178.0" promptText="Agence" style="-fx-background-color: pink;" />
+      <JFXButton fx:id="valider_btn" layoutX="63.0" layoutY="355.0" onAction="#valider" style="-fx-background-color: yellow;" text="Valider" />
+      <JFXButton layoutX="150.0" layoutY="355.0" text="Button1" />
+      <JFXButton layoutX="227.0" layoutY="355.0" />
+      <JFXButton layoutX="306.0" layoutY="355.0" />
+      <JFXButton fx:id="retour_btn" layoutX="384.0" layoutY="355.0" onAction="#retour" style="-fx-background-color: yellow;" text="Retour" />
+      <JFXComboBox fx:id="type_cbx" layoutX="42.0" layoutY="252.0" prefHeight="25.0" prefWidth="178.0" promptText="Type" style="-fx-background-color: pink;" />
+      <JFXTextField fx:id="solde_txt" layoutX="46.0" layoutY="103.0" maxWidth="178.0" minWidth="166.0" prefHeight="31.0" prefWidth="171.0" promptText="Solde" style="-fx-background-color: pink;" />
+   </children>
+</AnchorPane>

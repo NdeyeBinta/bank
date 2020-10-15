@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ui.AcceuilResController">
+   <children>
+      <JFXButton fx:id="client_btn" layoutX="34.0" layoutY="113.0" onAction="#client" prefHeight="25.0" prefWidth="185.0" style="-fx-background-color: pink;" text="Client" />
+      <JFXButton fx:id="operation_btn" layoutX="35.0" layoutY="200.0" onAction="#operation" prefHeight="25.0" prefWidth="185.0" style="-fx-background-color: pink;" text="Operation" />
+      <JFXButton fx:id="retour_btn" layoutX="502.0" layoutY="343.0" onAction="#retour" style="-fx-background-color: yellow;" text="Retour" />
+      <ImageView fitHeight="228.0" fitWidth="303.0" layoutX="272.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/user4.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="24.0" text="Responsable" textFill="#5707ed">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
